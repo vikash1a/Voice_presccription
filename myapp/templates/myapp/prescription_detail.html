@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+{% block title %}<title>Myapp</title>{% endblock %}
+{% block content %}
+  <h1>Prescription detail</h1>
+  <div>
+    <p><a href="{{prescription.id}}/update">Update  </a><a href="{{prescription.id}}/delete"> Delete</a></p>
+  </div>
+  <div>
+    <p><strong>Name : </strong> {{ prescription.name }}</p>
+    <p><strong>Symptoms : </strong> {{ prescription.symptoms }}</p> 
+    <p><strong>Diagnosis : </strong> {{ prescription.diagnosis }}</p>
+    <p><strong>Pescription : </strong> {{ prescription.pescription }}</p>
+    <p><strong>Advice : </strong> {{ prescription.advice }}</p>
+    <p><strong>Date : </strong> {{ prescription.date }}</p> 
+    <p><strong>Doctor : </strong> {{ prescription.doctor }}</p>
+  </div>
+    
+
+{% endblock %}
